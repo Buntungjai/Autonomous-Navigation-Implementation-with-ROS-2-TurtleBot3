@@ -5,7 +5,7 @@ https://youtu.be/KPBEK3a9VVg
 การนำหุ่นยนต์ TurtleBot3 Burger มาพัฒนาต่อด้วย ROS 2 Humble
 ซึ่งสามารถทำการสร้างแผนที่ (SLAM) และ การนำทางอัตโนมัติ (Autonomous Navigation)
 
-กำหนดการสื่อสารกันระหว่าง Raspberry Pi 4 และ Remote PC (Virtual Box : ubuntu 22.02) 
+กำหนดการสื่อสารกันระหว่าง Raspberry Pi 4 และ Remote PC (Virtual Box) 
 ผ่านเครือข่าย WIFI เดียวกัน โดยใช้เทคโนโลยี DDS
 
 SLAM Mapping: ใช้ Cartographer ในการสร้าง Occupancy Grid Map ของพื้นที่ทดสอบ
