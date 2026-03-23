@@ -18,3 +18,9 @@ Hardware & Software Stack
  - OS: Ubuntu 22.04 LTS
 
  - ROS Version: ROS 2 Humble Hawksbill
+
+เนื่องจากไม่มีแบตเตอรี่ และจ่ายไฟผ่าน Adaptor เท่านั้น จึงไม่ได้ทำ SLAM ไกลแต่ก็เห็นผลลัพธ์ว่าแผนที่ได้เพิ่มพื้นที่มากขึ้น
+<p align="center">
+  <img src="before.jpg" width="45%" />
+  <img src="after.jpg" width="45%" />
+</p>
