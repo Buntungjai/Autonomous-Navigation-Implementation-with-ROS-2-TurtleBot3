@@ -28,3 +28,10 @@ Hardware & Software Stack
 
 หลังจากที่ได้แบตเตอรี่มาแล้ววีดีโอด้านล่างนี้ทำ Nav2 ไปยังตำแหน่ง พื้นที่สีขาวได้
 ![demo](nav2.gif)
+
+การทำ SLAM ในห้องที่มีโต๊ะตรงกลางและเก้าอี้จำนวนมาก
+ภาพซ้ายคือก่อนทำ SLAM และภาพขวาคือหลังทำ SLAM
+<p align="center">
+  <img src="beforeSLAM.jpg" width="45%" />
+  <img src="afterSLAM.jpg" width="45%" />
+</p>
