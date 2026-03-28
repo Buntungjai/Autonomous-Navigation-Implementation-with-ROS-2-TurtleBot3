@@ -24,3 +24,7 @@ Hardware & Software Stack
   <img src="before.jpg" width="45%" />
   <img src="after.jpg" width="45%" />
 </p>
+
+
+หลังจากที่ได้แบตเตอรี่มาแล้ววีดีโอด้านล่างนี้ทำ Nav2 ไปยังตำแหน่ง พื้นที่สีขาวได้
+![demo](nav2.gif)
