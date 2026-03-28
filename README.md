@@ -1,5 +1,9 @@
 # Autonomous-Navigation-Implementation-with-ROS-2-TurtleBot3
-![demo](ros2Nav2turtle3.gif)
+
+<div align="center">
+  <img src="ros2Nav2turtle3.gif" alt="demo" width="600">
+</div>
+
 https://youtu.be/KPBEK3a9VVg
 
 การนำหุ่นยนต์ TurtleBot3 Burger มาพัฒนาต่อด้วย ROS 2 Humble
@@ -27,7 +31,10 @@ Hardware & Software Stack
 
 
 หลังจากที่ได้แบตเตอรี่มาแล้ววีดีโอด้านล่างนี้ทำ Nav2 ไปยังตำแหน่ง พื้นที่สีขาวได้
-![demo](nav2.gif)
+
+<div align="center">
+  <img src="nav2.gif" alt="demo" width="600">
+</div>
 
 การทำ SLAM ในห้องที่มีโต๊ะตรงกลางและเก้าอี้จำนวนมาก
 ภาพซ้ายคือก่อนทำ SLAM และภาพขวาคือหลังทำ SLAM
