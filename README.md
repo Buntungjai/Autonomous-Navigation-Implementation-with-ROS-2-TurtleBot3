@@ -6,6 +6,9 @@
 
 https://youtu.be/KPBEK3a9VVg
 
+UPDATE ทำ SLAM ในห้องและ NAV2 แบบมีแบตเตอรี่ (คลิปล่าง)
+https://youtu.be/AuQmlNzv48g
+
 การนำหุ่นยนต์ TurtleBot3 Burger มาพัฒนาต่อด้วย ROS 2 Humble
 ซึ่งสามารถทำการสร้างแผนที่ (SLAM) และ การนำทางอัตโนมัติ (Autonomous Navigation)
 
