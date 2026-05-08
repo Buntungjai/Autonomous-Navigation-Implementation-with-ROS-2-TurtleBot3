@@ -1,48 +1,44 @@
-# Autonomous-Navigation-Implementation-with-ROS-2-TurtleBot3
+# Autonomous-Navigation-Implementation-with-ROS 2-TurtleBot3
 
 <div align="center">
-  <img src="ros2Nav2turtle3.gif" alt="demo" width="600">
+  <img src="https://raw.githubusercontent.com/Buntungjai/Autonomous-Navigation-Implementation-with-ROS-2-TurtleBot3/main/ros2Nav2turtle3.gif" alt="Autonomous Navigation Demo" width="600">
 </div>
 
-https://youtu.be/KPBEK3a9VVg
+**วิดีโอสาธิตการใช้งาน:**
+- [SLAM & Navigation Overview](https://youtu.be/KPBEK3a9VVg)
+- [UPDATE: SLAM & Nav2 with Battery Power](https://youtu.be/AuQmlNzv48g)
 
-UPDATE ทำ SLAM ในห้องและ NAV2 แบบมีแบตเตอรี่ (คลิปล่าง)
+โปรเจกต์การพัฒนาหุ่นยนต์ TurtleBot3 Burger ด้วย **ROS 2 Humble** ครอบคลุมตั้งแต่การสร้างแผนที่ (SLAM) ไปจนถึงการนำทางอัตโนมัติ (Autonomous Navigation) ในสภาพแวดล้อมจริง
 
-https://youtu.be/AuQmlNzv48g
+### 🛠 Hardware & Software Stack
+- **Robot:** TurtleBot3 Burger (SBC: Raspberry Pi 4, Controller: OpenCR)
+- **Sensor:** 360 Laser Distance Sensor (LDS-01)
+- **OS:** Ubuntu 22.04 LTS
+- **ROS Version:** ROS 2 Humble Hawksbill
+- **Communication:** DDS (Data Distribution Service) ระหว่าง Raspberry Pi 4 และ Remote PC
 
-การนำหุ่นยนต์ TurtleBot3 Burger มาพัฒนาต่อด้วย ROS 2 Humble
-ซึ่งสามารถทำการสร้างแผนที่ (SLAM) และ การนำทางอัตโนมัติ (Autonomous Navigation)
+### 🗺️ SLAM Mapping (Cartographer)
+การสร้างแผนที่โดยใช้ Cartographer เพื่อสร้าง Occupancy Grid Map ในพื้นที่ทดสอบ
 
-กำหนดการสื่อสารกันระหว่าง Raspberry Pi 4 และ Remote PC (Virtual Box) 
-ผ่านเครือข่าย WIFI เดียวกัน โดยใช้เทคโนโลยี DDS
-
-SLAM Mapping: ใช้ Cartographer ในการสร้าง Occupancy Grid Map ของพื้นที่ทดสอบ
-
-Hardware & Software Stack
- - Robot: TurtleBot3 Burger (SBC: Raspberry Pi 4, Controller: OpenCR)
-
- - Sensor: 360 Laser Distance Sensor (LDS-01)
-
- - OS: Ubuntu 22.04 LTS
-
- - ROS Version: ROS 2 Humble Hawksbill
-
-เนื่องจากไม่มีแบตเตอรี่ และจ่ายไฟผ่าน Adaptor เท่านั้น จึงไม่ได้ทำ SLAM ไกลแต่ก็เห็นผลลัพธ์ว่าแผนที่ได้เพิ่มพื้นที่มากขึ้น
+**การทดสอบช่วงแรก (Power via Adapter):**
+ทำการสร้างแผนที่ในขอบเขตจำกัดเนื่องจากข้อจำกัดด้านสายไฟ แต่เห็นผลลัพธ์การขยายพื้นที่ของแผนที่ได้อย่างชัดเจน
 <p align="center">
-  <img src="before.jpg" width="45%" />
-  <img src="after.jpg" width="45%" />
+  <img src="https://raw.githubusercontent.com/Buntungjai/Autonomous-Navigation-Implementation-with-ROS-2-TurtleBot3/main/before.jpg" width="45%" />
+  <img src="https://raw.githubusercontent.com/Buntungjai/Autonomous-Navigation-Implementation-with-ROS-2-TurtleBot3/main/after.jpg" width="45%" />
 </p>
 
+---
 
-หลังจากที่ได้แบตเตอรี่มาแล้ววีดีโอด้านล่างนี้ทำ Nav2 ไปยังตำแหน่ง พื้นที่สีขาวได้
+### 🚀 Nav2 & Real-world Implementation
+หลังจากติดตั้งระบบแบตเตอรี่ หุ่นยนต์สามารถทำ Nav2 ไปยังตำแหน่งเป้าหมายในพื้นที่จริงได้อย่างอิสระ
 
 <div align="center">
-  <img src="nav2.gif" alt="demo" width="600">
+  <img src="https://raw.githubusercontent.com/Buntungjai/Autonomous-Navigation-Implementation-with-ROS-2-TurtleBot3/main/nav2.gif" alt="Nav2 Demo" width="600">
 </div>
 
-การทำ SLAM ในห้องที่มีโต๊ะตรงกลางและเก้าอี้จำนวนมาก
-ภาพซ้ายคือก่อนทำ SLAM และภาพขวาคือหลังทำ SLAM
+**การทำ SLAM ในพื้นที่ซับซ้อน:**
+ทดสอบในห้องที่มีโต๊ะและเก้าอี้จำนวนมาก เพื่อทดสอบความแม่นยำของ Lidar ในการตรวจจับสิ่งกีดขวางขนาดเล็ก
 <p align="center">
-  <img src="beforeSLAM.jpg" width="45%" />
-  <img src="afterSLAM.jpg" width="45%" />
+  <img src="https://raw.githubusercontent.com/Buntungjai/Autonomous-Navigation-Implementation-with-ROS-2-TurtleBot3/main/beforeSLAM.jpg" width="45%" />
+  <img src="https://raw.githubusercontent.com/Buntungjai/Autonomous-Navigation-Implementation-with-ROS-2-TurtleBot3/main/afterSLAM.jpg" width="45%" />
 </p>
